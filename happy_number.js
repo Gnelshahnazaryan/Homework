@@ -15,7 +15,7 @@ function digit_count(num)
 	{
 
 		count++;
-		num/=10;
+		num = Math.floor(num / 10);
 
 	}
 

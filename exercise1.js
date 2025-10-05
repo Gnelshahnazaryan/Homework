@@ -1,27 +1,18 @@
-let str = "hello";
+let str = "Hello World";
 
-function to_upper_case(str){
 
-	let res = '';
+function strlen(str){
 
-	for(let i = 0; i < str.length; i++){
+	let count = 0;
 
-		let a = str.charCodeAt(i);
+	for(let i = 0; str[i] != undefined; i++){
 
-		if((a >= 97 && a <= 122) && (a < 65  || a > 122)){
-
-			continue;
-
-		}
-
-		a -= 32;
-
-		res += String.fromCharCode(a);
+		count++;
 
 	}
-
-	return res;
+	
+	return count;
 
 }
 
-console.log(to_upper_case(str));
+console.log(strlen(str));
