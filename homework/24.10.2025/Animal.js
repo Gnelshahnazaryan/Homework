@@ -17,8 +17,15 @@ class Animal{
 
 class Dog extends Animal{
 
+    speak(){
+
+        console.log(`${this.name} is barking`);
+        
+    }
+
+
 }
 
 
-let dog = new Dog("Jeko");
+let dog = new Dog("Dog");
 dog.speak();
